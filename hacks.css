@@ -291,20 +291,22 @@ p {
 
 .desc-section {
   margin-bottom: 70px;
+  
 }
 
 .description {
   font-family: 'Nasalization', sans-serif;
   font-size: 24px;
   color: #e5e5e5;
-  max-width: 80ch;
+  /* max-width: 80ch; */
   text-align: center;
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
   text-align: center;
   margin-top: 4%;
   margin-left: 2%;
-
+  margin-right: 2%;
+  width: 95%;
 }
 
 @keyframes scale {
