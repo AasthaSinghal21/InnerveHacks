@@ -234,11 +234,23 @@ p {
 }
 
 .hero-register:hover {
-  background-color: rgb(10, 200, 247);
+  
+    background: #f010ce;
+    color: #050801;
+    box-shadow: 0 0 5px #0999db,
+      0 0 25px #0999db,
+      0 0 50px #0999db,
+      0 0 200px #0999db;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  
   box-shadow: #0999db;
-  color: black;
+  background-color: black;
+  border: #0999db solid 2px;
+  color: #f010ce;
   font-size: 16px;
 }
+
+
 
 .numbers-grid {
   position: absolute;
@@ -304,6 +316,7 @@ p {
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
   text-align: center;
   margin-top: 4%;
+
   margin-left: 2%;
   margin-right: 2%;
   width: 95%;
@@ -547,7 +560,7 @@ background-clip: text;
   /* animation: glitch 0.1s infinite alternate; */
 }
 
-a:hover {
+.track-card-button:hover {
   background: #5cff80;
   color: #050801;
   box-shadow: 0 0 5px #5cff80,
@@ -1502,3 +1515,5 @@ button.slick-prev:hover {
   }
 
 }
+
+/* -----------------text animation---------------- */
