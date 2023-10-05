@@ -8,6 +8,13 @@
   src: url("./Fonts/BACKTO1982.TTF") format("truetype");
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: black;
   overflow-x: hidden;
@@ -56,8 +63,8 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  border:  #f010da solid 2px;
-  background-color:  #f010da;
+  border: #f010da solid 2px;
+  background-color: #f010da;
 }
 
 .circle:hover {
@@ -234,15 +241,15 @@ p {
 }
 
 .hero-register:hover {
-  
-    background: #f010ce;
-    color: #050801;
-    box-shadow: 0 0 5px #0999db,
-      0 0 25px #0999db,
-      0 0 50px #0999db,
-      0 0 200px #0999db;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
-  
+
+  background: #f010ce;
+  color: #050801;
+  box-shadow: 0 0 5px #0999db,
+    0 0 25px #0999db,
+    0 0 50px #0999db,
+    0 0 200px #0999db;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+
   box-shadow: #0999db;
   background-color: black;
   border: #0999db solid 2px;
@@ -303,7 +310,7 @@ p {
 
 .desc-section {
   margin-bottom: 70px;
-  
+
 }
 
 .description {
@@ -675,7 +682,8 @@ background: linear-gradient(to right, #CF331B 0%, #5FFF2E 50%, #4112FF 50%, #CF2
   top: 0;
   transform: translateY(-800px);
   visibility: hidden;
-  background-color: rgba(47, 34, 101, 0.8); /* Adjust the opacity (last value) */
+  background-color: rgba(47, 34, 101, 0.8);
+  /* Adjust the opacity (last value) */
   transition: 1s;
   display: flex;
   align-items: center;
@@ -800,6 +808,12 @@ h1 {
 
 /*GALLERY*/
 
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
 
 .slider {
   max-width: 1000px;
@@ -850,7 +864,6 @@ button.slick-prev:hover {
   height: 300px;
 }
 
-/* Slick Slider Styles -- Provided by https://kenwheeler.github.io/slick/ */
 /* Slider */
 .slick-slider {
   position: relative;
@@ -871,6 +884,11 @@ button.slick-prev:hover {
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
 }
+
+/* .slick-slider .slick-prev {
+  text-align: left;
+  margin-left: -59px;
+} */
 
 .slick-slider .slick-next {
   text-align: right;
@@ -909,14 +927,12 @@ button.slick-prev:hover {
   position: relative;
   top: 0;
   left: 0;
-
   display: block;
 }
 
 .slick-track:before,
 .slick-track:after {
   display: table;
-
   content: '';
 }
 
@@ -992,19 +1008,14 @@ button.slick-prev:hover {
 .slick-next {
   font-size: 10;
   line-height: 0;
-
   position: absolute;
   top: 50%;
-
   display: block;
-
   width: 20px;
   height: 20px;
   margin-top: -10px;
   padding: 0;
-
   cursor: pointer;
-
   /* color: transparent; */
   border: none;
   outline: none;
@@ -1170,27 +1181,28 @@ button.slick-prev:hover {
 
 /*PRIZES*/
 
-.prizesd{
+.prizesd {
   background: #21BECF;
-background: linear-gradient(to right, #21BECF 0%, #829BFF 50%, #BC8FFF 50%, #F173FF 71%, #CF36AB 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #21BECF 0%, #829BFF 50%, #BC8FFF 50%, #F173FF 71%, #CF36AB 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: left;
   margin: 6rem;
   margin-bottom: 5px;
-  margin-left:5rem;
+  margin-left: 5rem;
   max-width: 250px;
-  font-size:30px;
+  font-size: 30px;
   font-family: 'Nasalization', sans-serif;
   /* animation: glitch 0.1s infinite alternate; */
 }
+
 .prize-wrapper-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 74vh;
-/*  background-color: #91919b;*/
+  /*  background-color: #91919b;*/
   background-color: black;
 }
 
@@ -1203,15 +1215,16 @@ background-clip: text;
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
-/*  background: linear-gradient(135deg, #0d3333, #41b1d3);*/
-/*  box-shadow: 0 10px 20px rgba(93, 19, 231, 0.2); /* Add the box shadow here */
-/*  background-color: #252444;*/
+  /*  background: linear-gradient(135deg, #0d3333, #41b1d3);*/
+  /*  box-shadow: 0 10px 20px rgba(93, 19, 231, 0.2); /* Add the box shadow here */
+  /*  background-color: #252444;*/
   background-color: black;
-/*  box-shadow: 0 10px 20px rgba(93, 19, 231, 0.2);*/
-  box-shadow: 0 10px 20px rgb(255, 182, 193,0.3);
+  /*  box-shadow: 0 10px 20px rgba(93, 19, 231, 0.2);*/
+  box-shadow: 0 10px 20px rgb(255, 182, 193, 0.3);
 
 }
- /*width: 600px;
+
+/*width: 600px;
   height: 390px;
   margin: 20px;
   display: flex;*/
@@ -1269,18 +1282,18 @@ background-clip: text;
   text-decoration: none;
 }
 
-.resp-prize-wrapper-container{
-  display:none;
+.resp-prize-wrapper-container {
+  display: none;
 }
 
 
 @media (max-width: 600px) {
-  .prizesd{
-    width:60%;
+  .prizesd {
+    width: 60%;
   }
 
   .prize-wrapper-container {
-    display:none; 
+    display: none;
   }
 
   .resp-prize-wrapper-container {
@@ -1288,54 +1301,54 @@ background-clip: text;
     justify-content: center;
     align-items: center;
     min-height: 74vh;
-/*  background-color: #91919b;*/
+    /*  background-color: #91919b;*/
     background-color: black;
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .resp-prize-card {
-    width: 80%; 
+    width: 80%;
     margin-bottom: 30px;
-    margin-top:50px;
+    margin-top: 50px;
     height: 250px;
     background-color: black;
-    box-shadow: 0 10px 20px rgb(255, 182, 193,0.3);
+    box-shadow: 0 10px 20px rgb(255, 182, 193, 0.3);
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
   }
 
   .resp-prize-card img {
-    width: 100%; 
-    height: 250px; 
-  }
-  
-  .resp-prize-card:hover img {
-    /* height: 200px; */
-    display:none;
+    width: 100%;
+    height: 250px;
   }
 
-  .lower-division{
+  .resp-prize-card:hover img {
+    /* height: 200px; */
+    display: none;
+  }
+
+  .lower-division {
     height: 300px;
   }
 
   .resp-prize-card .content {
     position: relative;
-  width: 50%;
-  left: 20%;
-  padding: 0px 20px 20px 40px;
-  padding-left: 10px;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s;
-  font-family: 'Nasalization', sans-serif;
-  font-size: 25px;
+    width: 50%;
+    left: 20%;
+    padding: 0px 20px 20px 40px;
+    padding-left: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    font-family: 'Nasalization', sans-serif;
+    font-size: 25px;
 
-    width: 100%; 
+    width: 100%;
     /*padding: 20px; */
-    max-height: 0; 
-    overflow: hidden; 
-    transition: max-height 1s ease-in-out; 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
     margin-top: 0;
   }
 
@@ -1348,20 +1361,20 @@ background-clip: text;
     opacity: 1;
     visibility: visible;
   }
-  
+
   .resp-prize-card .content h2 {
     color: #fff;
     text-transform: uppercase;
     font-size: 2.3em;
     line-height: 1em;
   }
-  
+
   .resp-prize-card .content p {
-    margin-left:5px;
+    margin-left: 5px;
     color: #fff;
     font-size: 22px;
   }
-  
+
   .resp-prize-card .content a {
     position: relative;
     display: inline-block;
@@ -1387,7 +1400,8 @@ background-clip: text;
     margin-top: 40px;
   }
 
-  .rounds, .gallery{
+  .rounds,
+  .gallery {
     width: 300px;
     margin-left: 4rem;
   }
@@ -1406,5 +1420,3 @@ background-clip: text;
     margin-top: 40px;
   }
 }
-
-

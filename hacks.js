@@ -1,26 +1,3 @@
-// /* const gibberishStrings = [
-//     "XXXXXXX XXXXX",
-//     "IXXXXXX XXXXX",
-//     "INXXXXX XXXXX",
-//     "INNXXXX XXXXX",
-//     "INNEXXX XXXXX",
-//     "INNERXX XXXXX",
-//     "INNERVX XXXXX",
-//     "INNERVE XXXXX",
-//     "INNERVE HXXXX",
-//     "INNERVE HAXXX",
-//     "INNERVE HACXX",
-//     "INNERVE HACKX",
-//     "INNERVE HACKS"
-// ]; */
-
-// /*
-// ["I", "IN", "INN", "INNE", "INNER", "INNERV", "INNERVE", 
-// "INNERVE H", "INNERVE HA", "INNERVE HAC", "INNERVE HACK", 
-// "INNERVE HACKS", "INNERVE HACKS.", "INNERVE HACKS..", 
-// "INNERVE HACKS..."]
-// */
-
 document.addEventListener("DOMContentLoaded", function () {
     const titleText = document.getElementById("title-text");
     const gibberishStrings = [
